@@ -1,0 +1,11 @@
+The json contains data for all 3r graphs with up to 16 vertices. The data is structured as a list of dicts, with one element per graph instance. Each instance is structured as described below. 
+
+edges: The edge list of the graph.
+p:     properties for each value of p in 0..10.
+  0:         The MaxCut value, as well as the average Goemans Williamson value.
+  1..10:     QAOA evaluated at various levels of p.
+    fixed_val:     Evaluation of the objective function evaluated at fixed values.
+    optimized_val: Evaluation of the objective function evaluated at optimal values.
+    angles:        a LIST of all degenerate optimal angles modulo pi. 4 degenerate optima for p=1, 8 for p=2.
+      gamma:             gamma angles, with gamma[0] being the first angle applied.
+      beta:              beta angles, ... ...
