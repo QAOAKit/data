@@ -1,0 +1,1 @@
+This is where the tables converting graphs to pynauty are stored.
